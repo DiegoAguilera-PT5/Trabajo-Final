@@ -14,17 +14,20 @@ body,html{
     flex-direction: column;
 }
 
+/*-----( NAV BAR )------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*-----( PORTADA PRINCIPAL )--------------------------------------------------------------------------------------------------------------------------------------------------------*/
 #portada_principal{
     background-color: #dddddd;
 
     width: 100%;
     height: 800px;
 }
-#portada_principal div{
+#portada_principal div.contenedor_col{
     background-image: url(imgs/img-portada_principal.jpg);
     background-size: contain;
     background-position: right;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
 
     width: 100%;
     height: 100%;
@@ -47,4 +50,26 @@ body,html{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
     text-shadow: 4px 4px 4px black;
+}
+#portada_principal div div{
+    margin-left: 30px;
+    margin-top: 30px;
+
+}
+#portada_principal div div button{
+    background-color: white;
+    
+    padding: 12px;
+    margin-right: 10px;
+
+    border: none;
+    border-radius: 25px;
+
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    cursor: pointer;
+}
+#portada_principal div div #n{
+    background-color: orange;
 }
