@@ -6,7 +6,9 @@
   <title>CoRus</title>
 </head>
 <body>
-  <!--Cree un div para hacer la primera parte de la pagina, la portada principal, el Nav tendria
+  <!--Creo la división del headear para ir forman la estructura basica del html Sebastian-->
+  <header>
+      <!--Cree un div para hacer la primera parte de la pagina, la portada principal, el Nav tendria
     que ir arriba de este div pero prefiero que la hagamos cuando terminemos la pagina para hacer
     saltos a las distintas secciones... {diego}-->
   <div id="portada_principal" class="contenedor_row">
@@ -17,5 +19,63 @@
         tranportes de importacion y exportacion a todos los puertos del mundo, execptuando Dinamarca.</p>
     </div>
   </div>
+  </header>
+  <!--Main donde colocaremos toda la info de la pag en si-->
+  <main>
+  <div class="container">
+    <nav class="nav">
+      <div class="container2">
+        <a class="seguimiento">Seguimiento de pedido</a>
+        <form class="busqueda" role="buscar">
+        <input class="form" type="search" placeholder="Número de guia" aria-label="Search">
+        <button class="btn" type="submit">Buscar</button>
+        </form>
+      </div>
+    </nav>
+  </div>
+  </main>
+  <!--Footer para las redes y final de la pag-->
+  <footer id="footer">
+    <div class="container2">
+      <div class="column">
+        <h2 class="titulo">CoRus</h2>
+        <h3 class="quienes">¿Quienes Somos?</h3>
+        <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, doloribus nulla? Totam nam, sunt dolorem itaque neque cumque maiores veritatis, porro aliquam mollitia molestiae odit fuga natus fugit iure consequatur.</p>
+      </div>
+      <div class="column">
+        <h3 class="titulo">Nuestro equipo de trabajo</h3>
+        <p class="parrafo">Pequeña descripcion del grupo de trabajo</p>
+        <ul class="personas">
+          <li>Persona1</li>
+          <li>Persona2</li>
+          <li>Persona3</li>
+          <li>Persona4</li>
+          <li>Persona5</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3 titulo>Servicios</h3>
+        <ul class="servicios">
+          <li>Entrega a domicilio</li>
+          <li>Gestion de contenedores</li>
+          <li>Despacho de productos</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3 class="titulo">Compañia</h3>
+        <ul class="Compañia">
+          <li>Contacto</li>
+          <li>Blog</li>
+          <li>Portfolio</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3 class="titulo">Redes Sociales</h3>
+        <a href="">Instagram</a>
+        <a href="">Facebook</a>
+        <a href="">Twitter</a>
+      </div>
+    </div>
+  </footer>  
 </body>
 </html>
