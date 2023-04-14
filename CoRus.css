@@ -55,9 +55,6 @@ div h3 {
     font-size: 100px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.transporte {
-    align-items: center;
-}
 .modo_transporte {
     flex-direction: column;
     align-content: center;
@@ -84,7 +81,7 @@ div h3 {
     transition: 0.3s;
 }
 .transporte{
-    
+    align-items: center;
     width: 100px;
     height: 100px;
 }
