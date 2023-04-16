@@ -324,3 +324,27 @@ ul li {
 #tarjetas_transporte div.contenedor_row::-webkit-scrollbar-track {
   border-radius: 10px;  
 }
+
+
+/*-----( 3 paginafabricio)-------------------------------------------------------------------------------------*/
+h1{
+  text-align: center;
+
+}
+.contenedor{
+  display: flex;
+ font-size: 18px;
+}
+.texto{
+  margin-right: 150px;
+  
+ 
+}
+
+.imagen{
+  width: 330px;
+  height: 330px;
+  margin-right: 150px;
+  
+}
+/*-----( 3 paginafabricio)-------------------------------------------------------------------------------------*/
