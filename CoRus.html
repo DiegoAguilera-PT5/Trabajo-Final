@@ -2,7 +2,10 @@
 <html>
 <head>
   <meta charset="UTF-8" />
+  <!--Estilo CSS-->
   <link href="CoRus.css" rel="stylesheet">
+  <!--Biblioteca de iconos-->
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
   <title>CoRus</title>
 </head>
 <body>
@@ -34,6 +37,49 @@
     </nav>
   </div>
   </main>
+
+   <!--Formulario-->
+    
+  <section>
+    <div class="container3">
+      <h2 class="title2">Lorem ipsum dolor sit amet.</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="container4">
+      <form>
+        <div>
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="country">País:</label>
+          <select id="country" name="country" required>
+            <option value="">Seleccionar</option>
+            <option value="AR">Argentina</option>
+            <option value="BR">Brasil</option>
+            <option value="CL">Chile</option>
+            <option value="CO">Colombia</option>
+            <option value="MX">México</option>
+            <option value="PE">Perú</option>
+          </select>
+        </div>
+        <div>
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <div>
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  
+
   <!--Footer para las redes y final de la pag-->
   <footer id="footer">
     <div class="container2">
@@ -46,11 +92,11 @@
         <h3 class="titulo">Nuestro equipo de trabajo</h3>
         <p class="parrafo">Pequeña descripcion del grupo de trabajo</p>
         <ul class="personas">
-          <li>Persona1</li>
-          <li>Persona2</li>
-          <li>Persona3</li>
-          <li>Persona4</li>
-          <li>Persona5</li>
+          <li><i class="las la-user">Diego</i></li>
+          <li><i class="las la-user">Tahiel</i></li>
+          <li><i class="las la-user">Sebastian</i></li>
+          <li><i class="las la-user">Persona4</i></li>
+          <li><i class="las la-user">Persona5</i></li>
         </ul>
       </div>
       <div class="column">
@@ -71,9 +117,10 @@
       </div>
       <div class="column">
         <h3 class="titulo">Redes Sociales</h3>
-        <a href="">Instagram</a>
-        <a href="">Facebook</a>
-        <a href="">Twitter</a>
+        <a href=""><i class="lab la-instagram"></i></a>
+        <a href=""><i class="lab la-facebook"></i></a>
+        <a href=""><i class="lab la-twitter"></i></a>
+        <a href=""><i class="lab la-whatsapp"></i></a>
       </div>
     </div>
   </footer>  
