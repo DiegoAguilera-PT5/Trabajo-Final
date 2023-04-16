@@ -1,237 +1,289 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-body,html{
-    width: 100%;
-    min-width: 1060px;
-    height: 100%;
-    overflow: hidden;
-    margin: 0%; !important
-    padding: 0%; !important
+body,
+html {
+  width: 100%;
+  min-width: 1060px;
+  height: 100%;
+  /*borrar luego*/
+  overflow-x: hidden;
+
 }
-.contenedor_row{
-    display: flex;
-    flex-direction: row;
+.contenedor_row {
+  display: flex;
+  flex-direction: row;
 }
-.contenedor_col{
-    display: flex;
-    flex-direction: column;
+.contenedor_col {
+  display: flex;
+  flex-direction: column;
 }
 
 /*-----( NAV BAR )------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-#nav_bar{
-    margin-top: 10px !important;
-    position: relative;
+#nav_bar {
+  margin-top: 10px !important;
+  position: relative;
 
-    height: 60px;
+  height: 60px;
 
-    align-items: center;
+  align-items: center;
 }
-#nav_bar img{
-    margin-left: 30px;
-    margin-right: 50px;
+#nav_bar img {
+  margin-left: 30px;
+  margin-right: 50px;
 
-    height: 100%;
+  height: 100%;
 }
-#nav_bar a{
-    margin-right: 40px;
+#nav_bar a {
+  margin-right: 40px;
 
-    font-size: 18px;
-    text-decoration: none;
-    color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-#nav_bar a#b{
-    background-color: white;
-    position: absolute;
-    right: 200px;
-    
-    padding: 12px;
-    margin-right: 10px;
+#nav_bar a#b {
+  background-color: white;
+  position: absolute;
+  right: 200px;
 
-    border-radius: 25px;
+  padding: 12px;
+  margin-right: 10px;
+
+  border-radius: 25px;
 }
-#nav_bar a#n{
-    background-color: orange;
-    position: absolute;
-    right: -20px;
-    
-    padding: 12px;
+#nav_bar a#n {
+  background-color: orange;
+  position: absolute;
+  right: -20px;
 
-    border-radius: 25px;
+  padding: 12px;
+
+  border-radius: 25px;
 }
-hr{
-    border: 2px solid gray;
-    border-radius: 5px;
+hr {
+  border: 2px solid gray;
+  border-radius: 5px;
 
-    width: 96%;
+  width: 96%;
 }
 
 /*-----( PORTADA PRINCIPAL )--------------------------------------------------------------------------------------------------------------------------------------------------------*/
-#portada_principal{
-    background-color: #dddddd;
+#portada_principal {
+  background-color: #dddddd;
 
-    width: 100%;
-    height: 870px;
+  width: 100%;
+  height: 870px;
 }
-#portada_principal div.contenedor_col{
-    background-image: url(imgs/img-portada_principal.png);
-    background-size: cover;
-    background-position: right;
-    background-repeat: no-repeat; 
+#portada_principal div.contenedor_col {
+  background-image: url(imgs/img-portada_principal.png);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
 
-    width: 100%;
-    height: 100%;
-
+  width: 100%;
+  height: 100%;
 }
-#portada_principal div h1{
-    margin-left: 30px;
+#portada_principal div h1 {
+  margin-left: 30px;
 
-    font-size: 150px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-    text-shadow: 4px 4px 4px black;
+  font-size: 150px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  text-shadow: 4px 4px 4px black;
 }
-#portada_principal div p{
-    margin-left: 30px;
-    margin-top: -35px;
+#portada_principal div p {
+  margin-left: 30px;
+  margin-top: -35px;
 
-    font-size: 25px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-    text-shadow: 4px 4px 4px black;
+  font-size: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  text-shadow: 4px 4px 4px black;
 }
-#portada_principal div div{
-    margin-left: 30px;
-    margin-top: 30px;
-
+#portada_principal div div {
+  margin-left: 30px;
+  margin-top: 30px;
 }
-#portada_principal div div#pp_a a{
-    background-color: white;
-    
-    padding: 12px;
-    margin-right: 10px;
+#portada_principal div div#pp_a a {
+  background-color: white;
 
-    border-radius: 25px;
+  padding: 12px;
+  margin-right: 10px;
 
-    color: black;
-    font-size: 18px;
-    text-decoration: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 25px;
+
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-#portada_principal div div a#n{
-    background-color: orange;
+#portada_principal div div a#n {
+  background-color: orange;
 }
 
+/*-----( TARJETAS )--------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#tarjetas_transporte {
+  align-items: center;
+
+  width: 100%;
+}
+#tarjetas_transporte h2 {
+  color: black;
+
+  text-align: left;
+  font-size: 100px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#tarjetas_transporte div.contenedor_row {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  overflow: scroll;
+  overflow-y: hidden;
+
+  margin-left: 20%;
+
+  width: 100%;
+}
+.modo_transporte {
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  height: 300px;
+  box-shadow: 10px 10px 10px gray;
+  background-color: white;
+  color: black;
+  margin: 50px 50px 50px 50px;
+  float: left;
+  border-radius: 10% 10% 0% 0%;
+  border: 2px solid gray;
+
+  display: inline-flex;
+  overflow: scroll;
+  overflow-y: hidden;
+  width: 500px;
+}
+.modo_transporte:hover {
+  background-color: orange;
+  color: blue;
+  box-shadow: 10px 10px 10px #faea10;
+  transition: 0.3s;
+}
+.transporte {
+  align-items: center;
+  width: 100px;
+  height: 100px;
+}
 
 /*Buscador de pedido*/
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-    background-color: #f9f9f9;
-  }
-  
-  .nav {
-    width: 600px;
-    height: 100px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .seguimiento {
-    font-size: 20px;
-    color: #0077c0;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .form {
-    width: 250px;
-    padding: 10px;
-    border: none;
-    border-bottom: 2px solid #cccccc;
-    font-size: 16px;
-    margin-right: 10px;
-  }
-  
-  .form:focus {
-    outline: none;
-    border-bottom: 2px solid #0077c0;
-  }
-  
-  .btn {
-    background-color: #0077c0;
-    color: #ffffff;
-    border: none;
-    border-radius: 3px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .btn:hover {
-    background-color: #005ea3;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-color: #f9f9f9;
+}
+
+.nav {
+  width: 600px;
+  height: 100px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.seguimiento {
+  font-size: 20px;
+  color: #0077c0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.form {
+  width: 250px;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #cccccc;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.form:focus {
+  outline: none;
+  border-bottom: 2px solid #0077c0;
+}
+
+.btn {
+  background-color: #0077c0;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #005ea3;
+}
+
 /*Estilización del footer falta realizar mas cambios todavia*/
 
-#footer{
-    background-color: rgb(74, 74, 155);
+#footer {
+  background-color: rgb(74, 74, 155);
 }
 .container2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .column {
-    flex-basis: 17%;
-    margin-bottom: 30px;
-  }
-  
-  .titulo {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .quienes,
-  .titulo,
-  .parrafo,
-  .servicios li,
-  .Compañia li,
-  .column a {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.column {
+  flex-basis: 17%;
+  margin-bottom: 30px;
+}
+
+.titulo {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.quienes,
+.titulo,
+.parrafo,
+.servicios li,
+.Compañia li,
+.column a {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
 ul li {
-    line-height: 2.7;
-    list-style: none;
-    margin-bottom: 5px;
-  }
+  line-height: 2.7;
+  list-style: none;
+  margin-bottom: 5px;
+}
 
 .lab {
   font-size: 55px;
 }
 
-.las{
+.las {
   font-size: 22px;
   font-weight: bold;
 }
 
-.container3{
+.container3 {
   background-image: url(imgs/container.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -239,40 +291,36 @@ ul li {
   height: 500px;
 }
 
-div h3 {
-    color: black;
-   
-    text-align: left;
-    font-size: 100px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+
+
+
+
+
+/*-----( ASPECTOS - WEBKIT)-------------------------------------------------------------------------------------*/
+#tarjetas_transporte div.contenedor_row::-webkit-scrollbar {
+  -webkit-appearance: none;
 }
-.modo_transporte {
-    flex-direction: column;
-    align-content: center;
-    text-align: center;
-    height: 300px;
-    width: 300px;
-    box-shadow: 10px 10px 10px gray;
-    background-color: white;
-    margin: 50px 50px 50px 50px;
-    float: left;
-    border-radius: 10% 10% 0% 0%;
-    border: 2px solid gray;
-    
-    display: inline-flex;
-    overflow: scroll;
-    overflow-y: hidden;
-    width: 500px;
-    
+
+#tarjetas_transporte div.contenedor_row::-webkit-scrollbar:vertical {
+  width:10px;
 }
-.modo_transporte:hover{
-    background-color: orange;
-    color: white;
-    box-shadow: 10px 10px 10px #faea10;
-    transition: 0.3s;
+
+#tarjetas_transporte div.contenedor_row::-webkit-scrollbar-button:increment,#tarjetas_transporte div.contenedor_row::-webkit-scrollbar-button {
+  display: none;
+} 
+
+#tarjetas_transporte div.contenedor_row::-webkit-scrollbar:horizontal {
+  height: 10px;
 }
-.transporte{
-    align-items: center;
-    width: 100px;
-    height: 100px;
+
+#tarjetas_transporte div.contenedor_row::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+}
+
+#tarjetas_transporte div.contenedor_row::-webkit-scrollbar-track {
+  border-radius: 10px;  
 }

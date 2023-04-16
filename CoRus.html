@@ -1,145 +1,163 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8" />
   <!--Estilo CSS-->
   <link href="CoRus.css" rel="stylesheet">
   <!--Link a la pagina de iconos "https://icons8.com/line-awesome" Por favor usar estos iconos-->
-  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
   <title>CoRus</title>
 </head>
-<body>
-  
-  <!--PORTADA PRINCIPAL | Cree un div para hacer la primera parte de la pagina, la portada principal... {diego}-->
-  <div id="portada_principal" class="contenedor_row">
-    <div class="contenedor_col">
-      
-      <!--NAV BAR | Luego hay que redirigir los links a la partes de Documento correspondientes... {diego}-->
-      <div id="nav_bar" class="contenedor_row">
-        <img src="imgs/PCoRus-Logo.png" alt="logo">
-        <a href="">Inicio</a>
-        <a href="">Parte2</a>
-        <a href="">Parte3</a>
-        <a href="">Ventas</a>
-        <a href="">Productos</a>
-        <a id="b" href=""><i class="las la-bars"> </i></a>
-        <a id="n" href="">+54 (9) 234 7654 987 </a>
-      </div>
-      <hr>
-      <!--NAV BAR | Fin de Nav Bar {diego}-->
 
-      <h1> Logistica de <br> Transporte</h1>
-      <p>Somos una empresa dedica al trasnporte de mercaderia en general, textil, alimenticia, <br>
-        farmaceutica, repuestos automotores, etc. Nuestro lema es "si entra, lo llevamos". Hacemos <br>
-        tranportes de importacion y exportacion a todos los puertos del mundo, execptuando Dinamarca.</p>
-      <div id="pp_a" class="contenedor_row">
-        <a id="n" href="">Contratanos</a>
-        <a href="">Reseñas <i class="las la-external-link-alt"></i></a>
-        <a href="">Preguntas Frecuentes <i class="las la-external-link-alt"></i></a> 
+<body>
+  <header>
+    <!--PORTADA PRINCIPAL | Cree un div para hacer la primera parte de la pagina, la portada principal... {diego}-->
+    <div id="portada_principal" class="contenedor_row">
+      <div class="contenedor_col">
+
+        <!--NAV BAR | Luego hay que redirigir los links a la partes de Documento correspondientes... {diego}-->
+        <div id="nav_bar" class="contenedor_row">
+          <img src="imgs/PCoRus-Logo.png" alt="logo">
+          <a href="">Inicio</a>
+          <a href="">Parte2</a>
+          <a href="">Parte3</a>
+          <a href="">Ventas</a>
+          <a href="">Productos</a>
+          <a id="b" href=""><i class="las la-bars"> </i></a>
+          <a id="n" href="">+54 (9) 234 7654 987 </a>
+        </div>
+        <hr>
+        <!--NAV BAR | Fin de Nav Bar {diego}-->
+
+        <h1> Logistica de <br> Transporte</h1>
+        <p>Somos una empresa dedica al trasnporte de mercaderia en general, textil, alimenticia, <br>
+          farmaceutica, repuestos automotores, etc. Nuestro lema es "si entra, lo llevamos". Hacemos <br>
+          tranportes de importacion y exportacion a todos los puertos del mundo, execptuando Dinamarca.</p>
+        <div id="pp_a" class="contenedor_row">
+          <a id="n" href="">Contratanos</a>
+          <a href="">Reseñas <i class="las la-external-link-alt"></i></a>
+          <a href="">Preguntas Frecuentes <i class="las la-external-link-alt"></i></a>
+        </div>
       </div>
     </div>
-  </div>
-  <section> 
-      
-    <div class="trasporte_contenedor">
-    
-        <h3>Modo de trasporte</h3>
-       
-        <a href="https://mundi.io/exportacion/tipos-camiones-de-carga/#:~:text=Las%20categor%C3%ADas%20son%20las%20siguientes,que%20superan%20los%2012%2C000%20kilogramos." target="_blank">
+
+    <!--PORTADA PRINCIPAL | Fin de Portada Principal {diego}-->
+  </header>
+
+  <main>
+
+    <div id="tarjetas_transporte" class="contenedor_col">
+
+      <h2>Modo de trasporte</h2>
+      <div class="contenedor_row">
+        <a href="https://mundi.io/exportacion/tipos-camiones-de-carga/#:~:text=Las%20categor%C3%ADas%20son%20las%20siguientes,que%20superan%20los%2012%2C000%20kilogramos."
+          target="_blank">
           <div class="modo_transporte">
             <div>
-              <img class="transporte"  src="https://img.icons8.com/small/100/null/container-truck.png"/>
+              <img class="transporte" src="https://img.icons8.com/small/100/null/container-truck.png" />
             </div>
             <div>
               <p><strong>Terrestre.</strong><br>
-                 Muy versátil,por su velocidad para transportar de puerta a puerta.
+                Muy versátil,por su velocidad para transportar de puerta a puerta.
               </p>
             </div>
           </div>
         </a>
-      <a href="https://es.wikipedia.org/wiki/Transporte_a%C3%A9reo" target="_blank"> 
-        <div class="modo_transporte"> 
-          <div>
-            <img class="transporte" src = "https://img.icons8.com/small/100/null/airplane-mode-on.png"/>
-          </div> 
-          <div>
-            <p><strong>Aéreo.</strong><br>
-              Se considera trasporte aéreo a toda actividad de traslado que se realice mediante una aeronave, es el mas seguro de todos los medios de trasporte.
-            </p>
+
+        <a href="https://es.wikipedia.org/wiki/Transporte_a%C3%A9reo" target="_blank">
+          <div class="modo_transporte">
+            <div>
+              <img class="transporte" src="https://img.icons8.com/small/100/null/airplane-mode-on.png" />
+            </div>
+            <div>
+              <p><strong>Aéreo.</strong><br>
+                Se considera trasporte aéreo a toda actividad de traslado que se realice mediante una aeronave, es el mas
+                seguro de todos los medios de trasporte.
+              </p>
+            </div>
           </div>
-        </div>
-      </a>
-      <a href="https://es.wikipedia.org/wiki/Transporte_mar%C3%ADtimo" target="_blank"> 
-        <div class="modo_transporte"> 
-          <div>
-            <img class="transporte" src="https://img.icons8.com/small/100/null/water-transportation.png"/>
-          </div> 
-          <div>
-            <p><strong>Marítimo.</strong><br>
-              Sirve para el transporte tanto de personas como de mercancía, por mas de un punto geográfico a otro a bordo de un buque. Es el mas utilizado, pues soporta mayor movimiento de mercancías.
-            </p>
+        </a>
+
+        <a href="https://es.wikipedia.org/wiki/Transporte_mar%C3%ADtimo" target="_blank">
+          <div class="modo_transporte">
+            <div>
+              <img class="transporte" src="https://img.icons8.com/small/100/null/water-transportation.png" />
+            </div>
+            <div>
+              <p><strong>Marítimo.</strong><br>
+                Sirve para el transporte tanto de personas como de mercancía, por mas de un punto geográfico a otro a
+                bordo de un buque. Es el mas utilizado, pues soporta mayor movimiento de mercancías.
+              </p>
+            </div>
           </div>
-        </div>
-      </a> 
-      <a href="https://es.wikipedia.org/wiki/Ferrocarril" target="_blank">
-        <div class="modo_transporte"> 
-          <div>
-            <img class="transporte" src="https://img.icons8.com/small/100/null/steam-engine.png"/>
+        </a>
+
+        <a href="https://es.wikipedia.org/wiki/Ferrocarril" target="_blank">
+          <div class="modo_transporte">
+            <div>
+              <img class="transporte" src="https://img.icons8.com/small/100/null/steam-engine.png" />
+            </div>
+            <div>
+              <p><strong>Ferreo</strong><br>
+                Un sistema de largas distancias y baja velocidad, usado regularmente para el trasporte de metriaw primas y
+                productos manufacturados de bajo valor y gran volumen y/o cantidad.
+              </p>
+            </div>
           </div>
-          <div>
-            <p><strong>Ferreo</strong><br>
-              Un sistema de largas distancias y baja velocidad, usado regularmente para el trasporte de metriaw primas y productos manufacturados de bajo valor y gran volumen y/o cantidad.
-            </p>
+        </a>
+
+        <a href="https://es.wikipedia.org/wiki/Transporte_fluvial" target="_blank">
+          <div class="modo_transporte">
+            <div>
+              <img class="transporte" src="https://img.icons8.com/small/100/null/water-transportation.png" />
+            </div>
+            <div>
+              <p><strong>Fluvial.</strong><br>
+                Consiste en usar el mismo medio que el marítimo solo que a través de rios con una profundidad adecuada.
+              </p>
+            </div>
           </div>
-        </div>
-      </a>
-      <a href="https://es.wikipedia.org/wiki/Transporte_fluvial" target="_blank">
-        <div class="modo_transporte">
-          <div>
-            <img class="transporte" src="https://img.icons8.com/small/100/null/water-transportation.png"/>
+        </a>
+
+        <a href="https://www.monografias.com/docs/Transporte-Lacustre-F37ZEUPJ8GNZ#:~:text=DEFINICI%C3%93N%3A,el%20%C3%A1mbito%20nacional%20e%20internacional."
+          target="_blank">
+          <div class="modo_transporte">
+            <div>
+              <img class="transporte" src="https://img.icons8.com/small/100/null/cargo-ship.png" />
+            </div>
+            <div>
+              <p><strong>Lacustre.</strong><br>
+                Navegación que realizan embarcaciones a través de los lagos. Se puede realizar comercio internacional
+                cuando 2 paises comparten el mismo lago.
+              </p>
+            </div>
           </div>
-          <div>
-            <p><strong>Fluvial.</strong><br>
-              Consiste en usar el mismo medio que el marítimo solo que a través de rios con una profundidad adecuada.
-            </p>
-          </div>
-        </div>
-      </a>  
-      <a href="https://www.monografias.com/docs/Transporte-Lacustre-F37ZEUPJ8GNZ#:~:text=DEFINICI%C3%93N%3A,el%20%C3%A1mbito%20nacional%20e%20internacional." target="_blank">
-        <div class="modo_transporte">  
-          <div> 
-            <img class="transporte" src="https://img.icons8.com/small/100/null/cargo-ship.png"/>
-          </div>
-          <div>
-            <p><strong>Lacustre.</strong><br>
-              Navegación que realizan embarcaciones a través de los lagos. Se puede realizar comercio internacional cuando 2 paises comparten el mismo lago.
-            </p>
-          </div>
-        </div>
-      </a>    
+        </a>
+      </div>
     <div>
-      
+
   </section>
   <!--cree una section para las tarjetas-->
-  <!--PORTADA PRINCIPAL | Fin de Portada Principal {diego}-->
-  </header>
+
   <!--Main donde colocaremos toda la info de la pag en si-->
   <main>
-  <div class="container">
-    <nav class="nav">
-      <div class="container2">
-        <a class="seguimiento">Seguimiento de pedido</a>
-        <form class="busqueda" role="buscar">
-        <input class="form" type="search" placeholder="Número de guia" aria-label="Search">
-        <button class="btn" type="submit">Buscar</button>
-        </form>
-      </div>
-    </nav>
-  </div>
+    <div class="container">
+      <nav class="nav">
+        <div class="container2">
+          <a class="seguimiento">Seguimiento de pedido</a>
+          <form class="busqueda" role="buscar">
+            <input class="form" type="search" placeholder="Número de guia" aria-label="Search">
+            <button class="btn" type="submit">Buscar</button>
+          </form>
+        </div>
+      </nav>
+    </div>
   </main>
 
-   <!--Formulario-->
-    
+  <!--Formulario-->
+
   <section>
     <div class="container3">
       <h2 class="title2">Lorem ipsum dolor sit amet.</h2>
@@ -178,7 +196,7 @@
     </div>
   </section>
 
-  
+
 
   <!--Footer para las redes y final de la pag-->
   <footer id="footer">
@@ -186,7 +204,9 @@
       <div class="column">
         <h2 class="titulo">CoRus</h2>
         <h3 class="quienes">¿Quienes Somos?</h3>
-        <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, doloribus nulla? Totam nam, sunt dolorem itaque neque cumque maiores veritatis, porro aliquam mollitia molestiae odit fuga natus fugit iure consequatur.</p>
+        <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, doloribus nulla? Totam
+          nam, sunt dolorem itaque neque cumque maiores veritatis, porro aliquam mollitia molestiae odit fuga natus
+          fugit iure consequatur.</p>
       </div>
       <div class="column">
         <h3 class="titulo">Nuestro equipo de trabajo</h3>
@@ -223,6 +243,7 @@
         <a href=""><i class="lab la-whatsapp"></i></a>
       </div>
     </div>
-  </footer>  
+  </footer>
 </body>
+
 </html>
