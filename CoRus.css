@@ -4,8 +4,7 @@
   box-sizing: border-box;
 }
 
-body,
-html {
+body,html {
   width: 100%;
   min-width: 1060px;
   height: 100%;
@@ -64,27 +63,31 @@ html {
 
   border-radius: 25px;
 }
-hr {
+#portada_principal nav hr {
   border: 2px solid gray;
   border-radius: 5px;
 
   width: 96%;
 }
 
-/*-----( PORTADA PRINCIPAL )--------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----( PORTADA PRINCIPAL )----------------------------------------------------------------------------------------------------------*/
 #portada_principal {
   background-color: #dddddd;
 
   width: 100%;
   height: 870px;
 }
-#portada_principal div.contenedor_col {
+#portada_principal.contenedor_col {
   background-image: url(imgs/img-portada_principal.png);
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
+}
+#portada_principal div.contenedor_col {
 
-  width: 100%;
+  align-content: center;
+  justify-content: center;
+
   height: 100%;
 }
 #portada_principal div h1 {
@@ -97,7 +100,7 @@ hr {
 }
 #portada_principal div p {
   margin-left: 30px;
-  margin-top: -35px;
+
 
   font-size: 25px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -125,9 +128,13 @@ hr {
   background-color: orange;
 }
 
-/*-----( TARJETAS )--------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
+/*-----( TARJETAS )-------------------------------------------------------------------------------------------------------------------*/
 #tarjetas_transporte {
+  background-color: white;
+
+  margin-top: -30px;
+
+  border-radius: 30px;
   align-items: center;
 
   width: 100%;
@@ -145,10 +152,33 @@ hr {
   overflow: scroll;
   overflow-y: hidden;
 
-  margin-left: 20%;
+  margin-left: 40%;
+
+  align-items: center;
+
 
   width: 100%;
 }
+#tarjetas_transporte div#lista a{
+  display: flex;
+  flex-direction: column;
+
+  margin: 10px;
+
+  border: 2px solid gray;
+  border-radius: 25px;
+  box-shadow: 10px 10px 10px gray;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 300px !important;
+  height: 300px;
+}
+#tarjetas_transporte div#lista a p{
+  text-align: center;
+}
+
 .modo_transporte {
   flex-direction: column;
   align-content: center;
@@ -165,7 +195,7 @@ hr {
   display: inline-flex;
   overflow: scroll;
   overflow-y: hidden;
-  width: 500px;
+  width: 200px;
 }
 .modo_transporte:hover {
   background-color: orange;
@@ -178,6 +208,10 @@ hr {
   width: 100px;
   height: 100px;
 }
+
+
+
+
 
 /*Buscador de pedido*/
 .container {
@@ -233,6 +267,17 @@ hr {
 
 .btn:hover {
   background-color: #005ea3;
+}
+
+#tarjetas_transporte hr {
+  margin: 15px 20px 15px 0px;
+
+  border: 2px solid rgba(128, 128, 128, 0.25);
+  border-radius: 5px;
+
+  align-self: self-end;
+
+  width: 80%;
 }
 
 /*Estilización del footer falta realizar mas cambios todavia*/
@@ -299,35 +344,32 @@ ul li {
 
 
 /*-----( ASPECTOS - WEBKIT)-------------------------------------------------------------------------------------*/
-#tarjetas_transporte div.contenedor_row::-webkit-scrollbar {
+body::-webkit-scrollbar, #tarjetas_transporte div.contenedor_row::-webkit-scrollbar {
   -webkit-appearance: none;
 }
-
+body::-webkit-scrollbar:vertical{
+  display: none;
+}
 #tarjetas_transporte div.contenedor_row::-webkit-scrollbar:vertical {
   width:10px;
 }
-
-#tarjetas_transporte div.contenedor_row::-webkit-scrollbar-button:increment,#tarjetas_transporte div.contenedor_row::-webkit-scrollbar-button {
+#tarjetas_transporte div.contenedor_row::-webkit-scrollbar-button:increment,
+#tarjetas_transporte div.contenedor_row::-webkit-scrollbar-button {
   display: none;
 } 
-
 #tarjetas_transporte div.contenedor_row::-webkit-scrollbar:horizontal {
   height: 10px;
 }
-
 #tarjetas_transporte div.contenedor_row::-webkit-scrollbar-thumb {
   background-color: #797979;
   border-radius: 20px;
   border: 2px solid #f1f2f3;
 }
-
 #tarjetas_transporte div.contenedor_row::-webkit-scrollbar-track {
   border-radius: 10px;  
 }
-
-
 /*-----( 3 paginafabricio)-------------------------------------------------------------------------------------*/
-h1{
+h2{
   text-align: center;
 
 }
