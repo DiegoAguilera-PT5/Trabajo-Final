@@ -40,6 +40,7 @@ body,html {
   margin-right: 40px;
 
   font-size: 18px;
+  font-weight: bold;
   text-decoration: none;
   color: black;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -47,7 +48,7 @@ body,html {
 #nav_bar a#b {
   background-color: white;
   position: absolute;
-  right: 200px;
+  right: 220px;
 
   padding: 12px;
   margin-right: 10px;
@@ -64,6 +65,8 @@ body,html {
   border-radius: 25px;
 }
 #portada_principal nav hr {
+  margin: auto;
+
   border: 2px solid gray;
   border-radius: 5px;
 
@@ -139,14 +142,56 @@ body,html {
 
   width: 100%;
 }
-#tarjetas_transporte h2 {
+#tarjetas_transporte div#intro {
+  width: 100%;
+  height: 200px;
+}
+#tarjetas_transporte div#intro div#a{
+  justify-content: center;
+  align-items: center;
+
+  width: 40%;
+  height: 100%;
+}
+#tarjetas_transporte div#intro p {
+  
   color: black;
 
-  text-align: left;
-  font-size: 100px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+
+  width: 250px;
+}
+#tarjetas_transporte div#intro div#b{
+  margin: auto;
+
+  align-items: center;
+  justify-content: space-around;
+
+  width: 60%;
+  height: 100%;
+}
+#tarjetas_transporte div#intro h2 {
+  color: black;
+  font-size: 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+  width: 80%;
+  min-width: 650px;
+}
+#tarjetas_transporte div#intro a {
+  background-color: orange;
+
+  padding: 12px;
+
+  border-radius: 25px;
+
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-#tarjetas_transporte div#lista{
+#tarjetas_transporte div#lista {
   display: inline-flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -157,10 +202,11 @@ body,html {
   margin-left: 20%;
 
   align-items: center;
+  justify-content: space-between;
 
   width: 80%;
 }
-#tarjetas_transporte div#lista a{
+#tarjetas_transporte div#lista a {
   display: flex;
   flex-direction: column;
 
@@ -180,58 +226,52 @@ body,html {
   width: 250px;
   height: 250px;
 }
-#tarjetas_transporte div#lista a div{
+#tarjetas_transporte div#lista a div {
   align-items: center;
 
   width: 250px;
   height: 250px;
 }
-#tarjetas_transporte div#lista a i{
+#tarjetas_transporte div#lista a i {
   margin-top: 10px;
+
+  color: orange;
   font-size: 80px;
 }
-#tarjetas_transporte div#lista a p{
+#tarjetas_transporte div#lista a p {
   margin: 10px;
+
   text-align: center;
+  font-size: 18px;
 }
-#tarjetas_transporte div#lista a p#a{
+#tarjetas_transporte div#lista a p#a {
   margin-top: 15px;
   margin-bottom: 0px;
 }
+#tarjetas_transporte hr {
+  margin: 15px 20px 15px 0px;
 
-.modo_transporte {
-  flex-direction: column;
-  align-content: center;
-  text-align: center;
-  height: 300px;
-  box-shadow: 10px 10px 10px gray;
-  background-color: white;
-  color: black;
-  margin: 50px 50px 50px 50px;
-  float: left;
-  border-radius: 10% 10% 0% 0%;
-  border: 2px solid gray;
+  border: 2px solid rgba(128, 128, 128, 0.25);
+  border-radius: 5px;
 
-  display: inline-flex;
-  overflow: scroll;
-  overflow-y: hidden;
-  width: 200px;
+  align-self: self-end;
+
+  width: 80%;
 }
-.modo_transporte:hover {
+#tarjetas_transporte div#lista a:hover {
   background-color: orange;
-  color: blue;
-  box-shadow: 10px 10px 10px #faea10;
-  transition: 0.3s;
+
+  box-shadow: 10px 10px 20px #faea10;
+  transition: 0.5s;
 }
-.transporte {
-  align-items: center;
-  width: 100px;
-  height: 100px;
+#tarjetas_transporte div#lista a:hover i {
+  color: #4b3eb1;
+  transition: 0.5s;
 }
-
-
-
-
+#tarjetas_transporte div#lista a:hover p {
+  color: white;
+  transition: 0.5s;
+}
 
 /*Buscador de pedido*/
 .container {
@@ -289,16 +329,7 @@ body,html {
   background-color: #005ea3;
 }
 
-#tarjetas_transporte hr {
-  margin: 15px 20px 15px 0px;
 
-  border: 2px solid rgba(128, 128, 128, 0.25);
-  border-radius: 5px;
-
-  align-self: self-end;
-
-  width: 80%;
-}
 
 /*Estilización del footer falta realizar mas cambios todavia*/
 
@@ -381,9 +412,12 @@ body::-webkit-scrollbar:vertical{
   height: 10px;
 }
 #tarjetas_transporte div#lista::-webkit-scrollbar-thumb {
-  background-color: #797979;
+  background-color: rgba(128, 128, 128, 0.5);
   border-radius: 20px;
   border: 2px solid #f1f2f3;
+}
+#tarjetas_transporte div#lista::-webkit-scrollbar-thumb:hover{
+  background-color: rgba(255, 166, 0, 0.5);
 }
 #tarjetas_transporte div#lista::-webkit-scrollbar-track {
   border-radius: 10px;  
