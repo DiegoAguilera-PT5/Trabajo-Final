@@ -9,7 +9,6 @@ body,html {
   min-width: 1060px;
   height: 100%;
   /*borrar luego*/
-  overflow-x: hidden;
 
 }
 .contenedor_row {
@@ -60,7 +59,7 @@ body,html {
   position: absolute;
   right: -20px;
 
-  padding: 12px;
+  padding: 8px;
 
   border-radius: 25px;
 }
@@ -444,3 +443,310 @@ h2{
   
 }
 /*-----( 3 paginafabricio)-------------------------------------------------------------------------------------*/
+
+/*-----Formulario----*/
+.image-container {
+  background-image: url(imgs/container.png);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 500px;
+  position: relative;
+}
+
+.section-form{
+  background-color: rgba(252, 97, 59, 0.911);
+  height: 80vh;
+}
+
+.container3 {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.container4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: 100px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e8f0f5;
+  padding: 20px;
+  width: 350px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group textarea {
+  resize: none;
+  height: 100px;
+}
+
+.form-group button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4285f4;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-group button:hover {
+  background-color: #3367d6;
+}
+
+@media (min-width: 480px){
+  #tarjetas_transporte {
+    background-color: white;
+  
+    margin-top: -30px;
+  
+    border-radius: 30px;
+    align-items: center;
+  
+    width: 100%;
+  }
+  #tarjetas_transporte div#intro {
+    width: 100%;
+    height: 300px;
+  }
+  #tarjetas_transporte div#intro div#a{
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    height: 100%;
+  }
+  #tarjetas_transporte div#intro p {
+    
+    color: black;
+  
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 27px;
+    margin-top: 60px;
+  
+    width: 285px;
+  }
+  #tarjetas_transporte div#intro div#b{
+    margin: auto;
+  
+    align-items: center;
+    justify-content: space-around;
+    
+    width: 65;
+    height: 100%;
+  }
+  #tarjetas_transporte div#intro h2 {
+    color: black;
+    font-size: 45px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  
+    width: 65%;
+  }
+  #tarjetas_transporte div#intro a {
+    background-color: orange;
+  
+    padding: 12px;
+  
+    border-radius: 25px;
+  
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  #tarjetas_transporte div#lista {
+    display: inline-flex;
+    flex-wrap: wrap;
+   
+  
+    padding-bottom: 20px;
+    margin-top: 50px;
+    margin-left: 8%;
+  
+    align-items: center;
+    justify-content: space-between;
+  
+    width: 85%;
+  }
+  #tarjetas_transporte div#lista a {
+    display: flex;
+    flex-direction: column;
+  
+    margin: 20px;
+    border: 2px solid gray;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px gray;
+  
+    color: black;
+    text-decoration: none;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  
+    align-items: center;
+    justify-content: center;
+  
+    width: 250px;
+    height: 315px;
+  }
+  #tarjetas_transporte div#lista a div {
+    align-items: center;
+  
+    width: 250px;
+    height: 250px;
+  }
+  #tarjetas_transporte div#lista a i {
+    margin-top: 10px;
+  
+    color: orange;
+    font-size: 80px;
+  }
+  #tarjetas_transporte div#lista a p {
+    margin: 10px;
+  
+    text-align: center;
+    font-size: 18px;
+  }
+  #tarjetas_transporte div#lista a p#a {
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+  #tarjetas_transporte hr {
+    margin: 15px 20px 15px 0px;
+  
+    border: 2px solid rgba(128, 128, 128, 0.25);
+    border-radius: 5px;
+  
+    align-self: self-end;
+  
+    width: 80%;
+  }
+  #tarjetas_transporte div#lista a:hover {
+    background-color: orange;
+  
+    box-shadow: 10px 10px 20px #faea10;
+    transition: 0.5s;
+  }
+  #tarjetas_transporte div#lista a:hover i {
+    color: #4b3eb1;
+    transition: 0.5s;
+  }
+  #tarjetas_transporte div#lista a:hover p {
+    color: white;
+    transition: 0.5s;
+  }
+
+  /*----Boton de busqueda----*/
+
+  .container{
+    background-color: white;
+    height: 250px;
+  }
+
+  .seguimiento{
+    font-size: 25px;
+  }
+  .btn{
+    font-size: 25px;
+    margin-left: 12px;
+  }
+
+  .form{
+    font-size: 22px;
+  }
+
+  /*Transporte*/
+  h2 {
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+  }
+  
+  .texto {
+    margin: 20px 0;
+    text-align: center;
+    background-color: rgb(243, 243, 235);
+  }
+  
+  .imagen {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  /*----Formulario-----*/
+  .section-form{
+    height: 700px;
+    border-radius: 33px;
+  }
+
+  .image-container{
+    height: 450px;
+  }
+  
+  /*---Footer---*/
+ 
+  .container2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .column {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .lab{
+    font-size: 60px;
+  }
+  .las{
+    font-size: 35px;
+    margin: 10px;
+  }
+}

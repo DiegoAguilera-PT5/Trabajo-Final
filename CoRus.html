@@ -16,13 +16,14 @@
       <nav> <!--NAV BAR | Luego hay que redirigir los links a la partes de Documento correspondientes... {diego}-->
         <div id="nav_bar" class="contenedor_row">
           <img src="imgs/PCoRus-Logo.png" alt="logo">
-          <a href="">Inicio</a>
-          <a href="">Parte2</a>
-          <a href="">Parte3</a>
-          <a href="">Ventas</a>
-          <a href="">Productos</a>
-          <a id="b" href=""><i class="las la-bars"></i></a>
-          <a id="n" href="">+54 (9) 234 7654 987 </a>
+          <ul class="contenedor_row">
+            <li class="contenedor_row"><a href="">Inicio</a></li>
+            <li class="contenedor_row"><a href="">Parte2</a></li>
+            <li class="contenedor_row"><a href="">Parte3</a></li>
+            <li class="contenedor_row"><a href="">Ventas</a></li>
+            <li class="contenedor_row"><a href="">Productos</a></li>
+            <li class="contenedor_row"><a id="n" href="">+54 (9) 234 7654 987</a></li>
+          </ul>
         </div> 
         <hr>
       </nav> <!--NAV BAR | Fin de Nav Bar {diego}-->
@@ -122,9 +123,9 @@
       </div>
     </section> <!--SEGUIMIENTO | Fineguimiento-->
     <section class="pagina3">
-      <h2><b>Traslado</b></h2>
     
       <div class="contenedor">
+        <h2><b>Traslado</b></h2>
         <img class="imagen" src="imgs/Camiones estacionados alineados _ Foto Premium.jpg" alt="">
         <div class="texto">
           <p>Nuestra empresa, cuenta con mas de 50 camiones para el traslado de mercaderia, trabajamos con camiones propios y con camiones contratados por terceros.</p>
@@ -141,41 +142,44 @@
     
     
       <!--Formulario-->
-      <section>
-        <div class="container3">
-          <h2 class="title2">Lorem ipsum dolor sit amet.</h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="container4">
-          <form>
-            <div>
-              <label for="name">Nombre:</label>
-              <input type="text" id="name" name="name" required>
-            </div>
-            <div>
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required>
-            </div>
-            <div>
-              <label for="country">País:</label>
-              <select id="country" name="country" required>
-                <option value="">Seleccionar</option>
-                <option value="AR">Argentina</option>
-                <option value="BR">Brasil</option>
-                <option value="CL">Chile</option>
-                <option value="CO">Colombia</option>
-                <option value="MX">México</option>
-                <option value="PE">Perú</option>
-              </select>
-            </div>
-            <div>
-              <label for="message">Mensaje:</label>
-              <textarea id="message" name="message" required></textarea>
-            </div>
-            <div>
-              <button type="submit">Enviar</button>
-            </div>
-          </form>
+      <section class="section-form">
+        <div class="image-container">
+          <div class="container3">
+            <h2 class="title2">Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="container4">
+            <form class="contact-form">
+              <h2>Contacto</h2>
+              <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="country">País:</label>
+                <select id="country" name="country" required>
+                  <option value="">Seleccionar</option>
+                  <option value="AR">Argentina</option>
+                  <option value="BR">Brasil</option>
+                  <option value="CL">Chile</option>
+                  <option value="CO">Colombia</option>
+                  <option value="MX">México</option>
+                  <option value="PE">Perú</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit">Enviar</button>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
 
@@ -183,7 +187,7 @@
 
 
   </main>
-<!--3pagina fabricio-->
+
 
   <!--Footer para las redes y final de la pag-->
   <footer id="footer">
@@ -202,7 +206,7 @@
           <li><i class="las la-user">Diego</i></li>
           <li><i class="las la-user">Tahiel</i></li>
           <li><i class="las la-user">Sebastian</i></li>
-          <li><i class="las la-user">Persona4</i></li>
+          <li><i class="las la-user">Fabricio</i></li>
           <li><i class="las la-user">Persona5</i></li>
         </ul>
       </div>
