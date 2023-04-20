@@ -7,7 +7,6 @@
 body,html {
   width: 100%;
   min-width: 1060px;
-  height: 100%;
   /*borrar luego*/
   overflow-x: hidden;
 
@@ -62,7 +61,7 @@ body,html {
 #nav_bar a#n {
   background-color: orange;
   position: absolute;
-  right: -20px;
+  right: 0px;
 
   padding: 12px;
 
@@ -280,13 +279,16 @@ body,html {
 
 /*-----(CALIDAD SERVICIO)-------------------------------------------------------------------------------------*/
 #calidad_servicio {
-  background-color: aquamarine;
-  
   width: 100%;
   height: auto;
 }
 #calidad_servicio div#a{
   background-color: orange;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
 
   width: 25%;
   height: auto;
@@ -294,6 +296,9 @@ body,html {
 #calidad_servicio div#a img{
   object-fit: cover;
   filter: opacity(75%);
+
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
 
   width: 100%;
   height: 100%;
@@ -304,6 +309,8 @@ body,html {
   width: 75%;
 }
 #calidad_servicio div#b h2{
+  padding:20px;
+
   color: black;
   font-size: 50px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -316,33 +323,26 @@ body,html {
   flex-wrap: wrap;
   justify-content: space-evenly;
 
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
 }
 #calidad_servicio div#b div.contenedor div{
-  margin: 20px;
+  margin: 25px;
 
   width: 250px;
   height: 250px;
 }
-#calidad_servicio div#b div p{
-  align-self: self-end;
+#calidad_servicio div#b div.contenedor div i{
+  margin: 10px;
+  margin-left: 0px;
 
+  color:orange;
+  font-size: 40px;
+}
+#calidad_servicio div#b div.contenedor div p{
   font-size: 18px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-
-.contenedor{
-  display: flex;
- font-size: 18px;
-}
-.imagen{
-  width: 330px;
-  height: 330px;
-  margin-right: 150px;
-  
-}
-
 /*Buscador de pedido*/
 .container {
   display: flex;

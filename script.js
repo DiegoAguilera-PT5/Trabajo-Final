@@ -12,8 +12,7 @@ form.addEventListener('submit', (event) => {
   event.preventDefault();
 
   // Obtenemos el valor del input
-  const codigo = tryParseInt(input.value);
-  tryParseInt(input.value);
+  const codigo = parseInt(input.value);
 
   // Verificamos si el código está dentro del rango válido
   if (codigo >= 0 && codigo <= 50000) {
