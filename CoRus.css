@@ -9,6 +9,7 @@ body,html {
   min-width: 1060px;
   height: 100%;
   /*borrar luego*/
+  overflow-x: hidden;
 
 }
 .contenedor_row {
@@ -19,10 +20,14 @@ body,html {
   display: flex;
   flex-direction: column;
 }
+.contenedor {
+  display: flex;
+}
 
 /*-----( NAV BAR )------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 #nav_bar {
   margin-top: 10px !important;
+  margin-bottom: 10px;
   position: relative;
 
   height: 60px;
@@ -36,7 +41,7 @@ body,html {
   height: 100%;
 }
 #nav_bar a {
-  margin-right: 40px;
+  margin-right: 20px;
 
   font-size: 18px;
   font-weight: bold;
@@ -135,6 +140,7 @@ body,html {
   background-color: white;
 
   margin-top: -30px;
+  padding-top: 25px;
 
   border-radius: 30px;
   align-items: center;
@@ -272,15 +278,79 @@ body,html {
   transition: 0.5s;
 }
 
+/*-----(CALIDAD SERVICIO)-------------------------------------------------------------------------------------*/
+#calidad_servicio {
+  background-color: aquamarine;
+  
+  width: 100%;
+  height: auto;
+}
+#calidad_servicio div#a{
+  background-color: orange;
+
+  width: 25%;
+  height: auto;
+}
+#calidad_servicio div#a img{
+  object-fit: cover;
+  filter: opacity(75%);
+
+  width: 100%;
+  height: 100%;
+}
+#calidad_servicio div#b{
+  align-items: center;
+
+  width: 75%;
+}
+#calidad_servicio div#b h2{
+  color: black;
+  font-size: 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+
+  width: 100%;
+  min-width: 650px;
+}
+#calidad_servicio div#b div.contenedor{
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  width: 100%;
+  height: 100%;
+}
+#calidad_servicio div#b div.contenedor div{
+  margin: 20px;
+
+  width: 250px;
+  height: 250px;
+}
+#calidad_servicio div#b div p{
+  align-self: self-end;
+
+  font-size: 18px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.contenedor{
+  display: flex;
+ font-size: 18px;
+}
+.imagen{
+  width: 330px;
+  height: 330px;
+  margin-right: 150px;
+  
+}
+
 /*Buscador de pedido*/
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 500px;
-  background-color: #f9f9f9;
+  background-color: #cacaca;
 }
-
 .nav {
   width: 600px;
   height: 100px;
@@ -291,14 +361,12 @@ body,html {
   align-items: center;
   padding: 20px;
 }
-
 .seguimiento {
   font-size: 20px;
   color: #0077c0;
   text-decoration: none;
   font-weight: bold;
 }
-
 .form {
   width: 250px;
   padding: 10px;
@@ -307,12 +375,10 @@ body,html {
   font-size: 16px;
   margin-right: 10px;
 }
-
 .form:focus {
   outline: none;
   border-bottom: 2px solid #0077c0;
 }
-
 .btn {
   background-color: #0077c0;
   color: #ffffff;
@@ -323,15 +389,11 @@ body,html {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
 .btn:hover {
   background-color: #005ea3;
 }
 
-
-
 /*Estilización del footer falta realizar mas cambios todavia*/
-
 #footer {
   background-color: rgb(74, 74, 155);
 }
@@ -342,17 +404,14 @@ body,html {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .column {
   flex-basis: 17%;
   margin-bottom: 30px;
 }
-
 .titulo {
   font-size: 24px;
   margin-bottom: 20px;
 }
-
 .quienes,
 .titulo,
 .parrafo,
@@ -362,22 +421,18 @@ body,html {
   font-size: 20px;
   margin-bottom: 10px;
 }
-
 ul li {
   line-height: 2.7;
   list-style: none;
   margin-bottom: 5px;
 }
-
 .lab {
   font-size: 55px;
 }
-
 .las {
   font-size: 22px;
   font-weight: bold;
 }
-
 .container3 {
   background-image: url(imgs/container.png);
   background-repeat: no-repeat;
@@ -385,13 +440,6 @@ ul li {
   background-position: center;
   height: 500px;
 }
-
-
-
-/*-----Prueba del navbar responsive-----------------------------------*/
-
-
-
 
 /*-----( ASPECTOS - WEBKIT)-------------------------------------------------------------------------------------*/
 body::-webkit-scrollbar, #tarjetas_transporte div#lista::-webkit-scrollbar {
@@ -421,28 +469,7 @@ body::-webkit-scrollbar:vertical{
 #tarjetas_transporte div#lista::-webkit-scrollbar-track {
   border-radius: 10px;  
 }
-/*-----( 3 paginafabricio)-------------------------------------------------------------------------------------*/
-h2{
-  text-align: center;
 
-}
-.contenedor{
-  display: flex;
- font-size: 18px;
-}
-.texto{
-  margin-right: 150px;
-  
- 
-}
-
-.imagen{
-  width: 330px;
-  height: 330px;
-  margin-right: 150px;
-  
-}
-/*-----( 3 paginafabricio)-------------------------------------------------------------------------------------*/
 
 /*-----Formulario----*/
 .image-container {
