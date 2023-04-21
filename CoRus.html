@@ -18,11 +18,11 @@
         <div id="nav_bar" class="contenedor_row">
           <img src="imgs/PCoRus-Logo.png" alt="logo">
           <ul class="contenedor_row">
-            <li class="contenedor_row"><a href="">Inicio</a></li>
+            <li class="contenedor_row"><a href="#portada_principal">Inicio</a></li>
             <li class="contenedor_row"><a href=#tarjetas_transporte>Transporte</a></li>
-            <li class="contenedor_row"><a href="">Parte3</a></li>
-            <li class="contenedor_row"><a href="">Ventas</a></li>
-            <li class="contenedor_row"><a href="">Productos</a></li>
+            <li class="contenedor_row"><a href="#calidad_servicio">Servicio</a></li>
+            <li class="contenedor_row"><a href="#modo_operar">Operandus</a></li>
+            <li class="contenedor_row"><a href="#formulario_contacto">Contacto</a></li>
           </ul>
           <a id="b" href=""><i class="las la-bars"></i></a>
           <a id="n" href="">+54 (9) 234 7654 987</a> 
@@ -138,15 +138,23 @@
         </div>
       </div>
     </section> <!--CALIDAD | Fin de calidad de pedido-->
-    <section>
+    <section> <!--OPERANDUS | Inicio de Operandus-->
       <div id="modo_operar" class="contenedor_row">
         <div id="intro" class="contenedor_col">
           <h2>Asi es como CoRus opera</h2>
+          <p>Si ya has contratado nuestros servicios y conoces el codigo del pedido puedes ver su estado aqui.</p>
+          <div id="seguimiento" class="contenedor"> <!--SEGUIMIENTO | Seguimiento de pedido-->
+            <p><strong> Seguimiento de pedido</strong></p>
+            <form id="form_seguimiento" class="contenedor_col" role="buscar">
+              <input id="form_seguimiento_campo1" type="search" placeholder="Codigo de pedido" aria-label="Search">
+              <button type="submit">Buscar</button>
+            </form>
+          </div> <!--SEGUIMIENTO | Fin de seguimiento-->
         </div>
         <div id="lista">
           <div id="a">
             <div id="tarjeta" class="contenedor_col">
-              <div id="a" class="cotenedor_row">
+              <div id="ta">
                 <i class="lar la-edit"></i>
                 <p><strong>Recepción y gestión de stock</strong></p>
               </div>
@@ -158,7 +166,7 @@
           </div>
           <div id="a">
             <div id="tarjeta" class="contenedor_col">
-              <div id="a" class="cotenedor_row">
+              <div id="ta">
                 <i class="las la-archive"></i>
                 <p><strong>Preparación de pedidos</strong></p>
               </div>            
@@ -170,9 +178,9 @@
           </div>
           <div id="a">
             <div id="tarjeta" class="contenedor_col">
-              <div id="a" class="cotenedor_row">
+              <div id="ta">
                 <i class="las la-truck"></i>
-                <p><strong>Servicios de distribución a todo el pais</strong></p>
+                <p><strong>Servicio de distribución a todo el pais</strong></p>
               </div>
               <p>
                 Realizamos la distribución en forma diaria con móbiles de
@@ -182,7 +190,7 @@
           </div>
           <div id="a">
             <div id="tarjeta" class="contenedor_col">
-              <div id="a" class="las la-headset">
+              <div id="ta">
                 <i class="lar la-edit"></i>
                 <p><strong>Atención al cliente</strong></p>
               </div>
@@ -194,9 +202,9 @@
           </div>
           <div id="a">
             <div id="tarjeta" class="contenedor_col">
-              <div id="a" class="cotenedor_row">
+              <div id="ta">
                 <i class="las la-mobile-alt"></i>
-                <p><strong>Gestión de inventarios en Compañia.</strong></p>
+                <p><strong>Gestión de inventarios en Compañia</strong></p>
               </div>
               <p>
                 Hacemos una gestión de stock y recuentos físicos periódicos para
@@ -206,26 +214,9 @@
           </div>
         </div>
       </div>
-    </section>
-    <section>  <!--SEGUIMIENTO | Seguimiento de pedido-->
-      <div class="container">
-        <nav class="nav">
-          <div class="container2">
-            <a class="seguimiento">Seguimiento de pedido</a>
-            <form class="busqueda" role="buscar">
-              <input id="num_guia" class="form" type="search" placeholder="Número de guia" aria-label="Search">
-              <button class="btn" type="submit">Buscar</button>
-            </form>
-          </div>
-        </nav>
-      </div>
-    </section> <!--SEGUIMIENTO | Fin de seguimiento-->
+    </section> <!--OPERANDUS | Fin de Operandus-->
     <section class="section-form"> <!--Formulario-->
-      <div class="image-container">
-        <div class="container3">
-          <h2 class="title2">Lorem ipsum dolor sit amet.</h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        </div>
+      <div id="formulario_contacto" class="image-container">
         <div class="container4">
           <form class="contact-form">
             <h2>Contacto</h2>

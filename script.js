@@ -3,8 +3,8 @@
 const etapa = ["se encuentra en planta de distribución","se encuentra en camino al destinatario",
 "se encuentra listo para su retiro en nuestra estacion","se encuentra retenido en aduana",
 "ha sido cancelado por una la falta de una direccion valida"];
-const form = document.querySelector('.busqueda');
-const input = document.querySelector('.form');
+const form = document.querySelector('#form_seguimiento');
+const input = document.querySelector('#form_seguimiento_campo1');
 
 // Agregamos el evento submit al formulario
 form.addEventListener('submit', (event) => {
@@ -13,7 +13,7 @@ form.addEventListener('submit', (event) => {
 
   // Obtenemos el valor del input
   const codigo = parseInt(input.value);
-
+  
   // Verificamos si el código está dentro del rango válido
   if (codigo >= 0 && codigo <= 50000) {
     // Si está dentro del rango, mostramos un mensaje indicando que el paquete se encuentra en planta de distribución
