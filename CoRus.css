@@ -6,7 +6,6 @@
 
 body,html {
   width: 100%;
-  min-width: 1060px;
   /*borrar luego*/
   overflow-x: hidden;
 
@@ -502,7 +501,7 @@ body,html {
   box-shadow:inset 0px -3px 3px rgba(75, 62, 177, 0.5);
 }
 #seguimiento form button:hover{
-  box-shadow:inset 0px 0px 5px 5px rgba(255, 166, 0, 0.25);
+  background-color: #3367d6;
 }
 
 /*-----Formulario----*/
@@ -541,7 +540,7 @@ body,html {
   left: 0;
   right: 0;
   bottom: 0;
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 .contact-form {
@@ -550,9 +549,11 @@ body,html {
   align-items: center;
   background-color: #e8f0f5;
   padding: 20px;
-  width: 350px;
+  width: 450px;
   border-radius: 25px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
 }
 
 .contact-form h2 {
@@ -563,6 +564,9 @@ body,html {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+
+  ;
+  width: 90%;
 }
 
 .form-group label {
@@ -585,13 +589,15 @@ body,html {
 }
 
 .form-group button {
-  padding: 10px 20px;
+  padding: 5px;
   border-radius: 5px;
   border: none;
-  background-color: #4285f4;
+  background-color: #4b3eb1;
   color: #fff;
+  align-self: center;
   font-size: 16px;
   cursor: pointer;
+  width: 20%;
 }
 
 .form-group button:hover {
@@ -602,13 +608,26 @@ body,html {
 /*Estilización del footer falta realizar mas cambios todavia*/
 #footer {
   background-color: #4b3eb1;
+  margin-top: -30px;
+  padding-top: 40px;
+
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+
+  justify-content: space-around;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+
+  width: 100%;
 }
-.container2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
+#footer .contenedor_col{
+  width: 200px;
+  margin: 20px;
+}
+#footer img{
+  margin-bottom: 20px;
+
+  width: 80%;
 }
 .column {
   flex-basis: 17%;
@@ -616,29 +635,34 @@ body,html {
 }
 .titulo {
   font-size: 24px;
-  margin-bottom: 20px;
 }
-.quienes,
-.titulo,
-.parrafo,
-.servicios li,
-.Compañia li,
-.column a {
-  font-size: 20px;
-  margin-bottom: 10px;
+
+ul{
+  margin-top: 20px;
 }
 ul li {
-  line-height: 2.7;
+  line-height: 1.5;
   list-style: none;
+
   margin-bottom: 5px;
 }
-.lab {
-  font-size: 55px;
+#footer div#nuestro_equipo ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
 }
-.las {
-  font-size: 22px;
-  font-weight: bold;
+#footer div#redes ul li {
+  line-height: 1;
+  list-style: none;
+
+  margin-bottom: 5px;
 }
+#footer div#redes ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 40px;
+}
+
 .container3 {
   background-image: url(imgs/container.png);
   background-repeat: no-repeat;
