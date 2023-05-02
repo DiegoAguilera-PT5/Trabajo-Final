@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="CoRus.css">
   <!--Link a la pagina de iconos "https://icons8.com/line-awesome" Por favor usar estos iconos-->
   <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <!-- <meta content="width=device-width, initial-scale=1" name="viewport" /> -->
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <title>CoRus</title>
 </head>
@@ -16,7 +17,7 @@
     <div id="portada_principal" class="contenedor_col"> <!--PORTADA PRINCIPAL | Inicio de Portada Principal {diego}-->
       <nav> <!--NAV BAR | Luego hay que redirigir los links a la partes de Documento correspondientes... {diego}-->
         <div id="nav_bar" class="contenedor_row">
-          <img src="imgs/CoRus-Logo.png" alt="logo">
+          <img src="imgs/PCoRus-Logo.png" alt="logo">
           <ul class="contenedor_row">
             <li class="contenedor_row"><a href="#portada_principal">Inicio</a></li>
             <li class="contenedor_row"><a href=#tarjetas_transporte>Transporte</a></li>
@@ -46,7 +47,7 @@
     <section> <!--TARJETAS | Cree una section para las tarjetas -->
       <div id="tarjetas_transporte" class="contenedor_col">
         <div id="intro" class="contenedor_row">
-          <div id="a" class="contenedor_col">
+          <div id="a" class="contenedor_col" >
             <p>Conoce sobre nuestros metodos de envio y distribucion y especificaciones de cada tipo.
             Si tienes alguna duda puedes ver cual seria el metodo de envio mas conveniente segun tu
             caso con nuestra Asistente de Envios</p>
@@ -215,7 +216,7 @@
         </div>
       </div>
     </section> <!--OPERANDUS | Fin de Operandus-->
-    <section class="section-form"> <!--FORMULARIO | Inicio de Formulario-->
+    <section class="section-form"> <!--Formulario-->
       <div id="formulario_contacto" class="image-container">
         <div class="container4">
           <form class="contact-form">
@@ -250,52 +251,57 @@
           </form>
         </div>
       </div>
-    </section> <!--FORMULARIO | Fin de Formulario-->
+    </section>
+
+
+
+
   </main>
-  <footer>
-    <div id="footer" class="contenedor_row">
-      <div id="quienes_somos" class="contenedor_col">
-        <img src="imgs/CoRus-LogoB.png" alt="logo">
-        <h3 class="quienes">¿Quienes Somos?</h3>
-        <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, doloribus nulla? Totam
-          nam, sunt dolorem itaque neque cumque maiores veritatis, porro aliquam mollitia molestiae odit fuga natus
-          fugit iure consequatur.</p>
+
+
+  <!--Footer para las redes y final de la pag-->
+  <footer id="footer">
+    <div class="container2">
+      <div class="column">
+        <h2 class="titulo">CoRus</h2>
+        <h3 class="quienes"><u>¿Quienes Somos?</u></h3>
+        <p class="parrafo">Somos una empresa que transporta mercaderia a nivel nacional e internacional si queres saber mas sobre nosotros click aqui</p>
+        <a href id ="#Subir">Subir</a>
       </div>
-      <div id="nuestro_equipo" class="contenedor_col">
-        <h3 class="titulo">Nuestro equipo de trabajo</h3>
+      <div class="column">
+        <h3 class="titulo"> <u>Nuestro equipo de trabajo</u></h3>
         <p class="parrafo">Pequeña descripcion del grupo de trabajo</p>
         <ul class="personas">
-          <li><a href="https://github.com/DiegoAguilera-PT5" target="_blank"><i class="las la-user">Diego</i></a></li>
-          <li><a href="https://github.com/Thaiel17" target="_blank"><i class="las la-user">Tahiel</i></a></li>
-          <li><a href="https://github.com/LautaroScherer" target="_blank"><i class="las la-user">Sebastian</i></a></li>
-          <li><a href="https://github.com/fabricioszvabiuk" target="_blank"><i class="las la-user">Fabricio</i></a></li>
-          <li><a href="https://github.com/Lisvillegas" target="_blank"><i class="las la-user">Elias</i></a></li>
+          <li><i class="las la-user">Diego</i></li>
+          <li><i class="las la-user">Tahiel</i></li>
+          <li><i class="las la-user">Sebastian</i></li>
+          <li><i class="las la-user">Fabricio</i></li>
+          <li><i class="las la-user">Persona5</i></li>
         </ul>
       </div>
-      <div id="servicios" class="contenedor_col">
-        <h3 titulo>Servicios</h3>
-        <ul class="servicios">
+      <div class="column">
+        <h3 titulo><u>Servicios</u></h3>
+        <ul class="Servicios">
+          <br>
           <li>Entrega a domicilio</li>
           <li>Gestion de contenedores</li>
           <li>Despacho de productos</li>
         </ul>
       </div>
-      <div id="compañia" class="contenedor_col">
-        <h3 class="titulo">Compañia</h3>
+      <div class="column">
+        <h3 class="titulo"><u>Compañia</u></h3>
         <ul class="Compañia">
           <li>Contacto</li>
           <li>Blog</li>
-          <li>Portfolio</li>
+          <li>Portafolio</li>
         </ul>
       </div>
-      <div id="redes" class="contenedor_col">
-        <h3 class="titulo">Redes Sociales</h3>
-        <ul>
-          <li><a href=""><i class="lab la-instagram"></i></a></li>
-          <li><a href=""><i class="lab la-facebook"></i></a></li>
-          <li><a href=""><i class="lab la-twitter"></i></a></li>
-          <li><a href=""><i class="lab la-whatsapp"></i></a></li>
-        </ul>
+      <div class="column">
+        <h3 class="titulo"><u>Redes Sociales</u></h3>
+       <br> <a href=""><i class="lab la-instagram"></i></a>
+       <br>  <a href=""><i class="lab la-facebook"></i></a>
+      <br> <a href=""><i class="lab la-twitter"></i></a>
+      <br>  <a href=""><i class="lab la-whatsapp"></i></a>
       </div>
     </div>
   </footer>
